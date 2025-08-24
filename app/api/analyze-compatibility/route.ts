@@ -2,7 +2,7 @@ import { OpenAI } from "openai"
 import Groq from "groq-sdk"
 
 const groq = new Groq({
-  apiKey: Bun.env.GROQ_API_KEY
+  apiKey: process.env.GROQ_API_KEY
 })
 const openai = new OpenAI({
   apiKey: process.env.OPENAI,
