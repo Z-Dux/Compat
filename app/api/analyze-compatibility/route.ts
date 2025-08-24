@@ -4,10 +4,6 @@ import Groq from "groq-sdk"
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY
 })
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI,
-  baseURL: ``
-})
 
 
 export async function POST(request: Request) {
