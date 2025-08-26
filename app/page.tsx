@@ -57,11 +57,11 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-secondary rounded-md flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-8 h-8 text-secondary-foreground" />
               </div>
-              <CardTitle className="text-xl text-foreground">AIによる診断</CardTitle>
+              <CardTitle className="text-xl text-foreground">独自ロジック診断</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base leading-relaxed">
-                AIがあなたの情報をもとに、二人の関係性をパーソナライズして診断します。
+                あなたの情報をもとに、独自の診断ロジックで二人の関係性を分析します。
               </CardDescription>
             </CardContent>
           </Card>
@@ -104,9 +104,9 @@ export default function LandingPage() {
                 <div className="w-16 h-16 bg-secondary text-secondary-foreground rounded-md flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   2
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">AIによる分析</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">診断ロジックによる分析</h3>
                 <p className="text-muted-foreground">
-                  AIが複数の診断システムを使って二人の相性を分析します。
+                  独自の診断ロジックで複数のシステムを使い、二人の相性を分析します。
                 </p>
               </div>
               <div className="text-center">
