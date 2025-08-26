@@ -17,10 +17,9 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "Find Your Compatibility - Love Test",
+  title: "Find Your 相性 - Love Test",
   description:
     "Discover your compatibility in seconds with our comprehensive love test using zodiac, MBTI, blood type and more",
-  generator: "v0.app",
 }
 
 export default function RootLayout({

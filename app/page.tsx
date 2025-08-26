@@ -13,24 +13,24 @@ export default function LandingPage() {
         <div className="text-center mb-16">
           <div className="flex justify-center mb-8">
             <div className="relative">
-              <Heart className="w-20 h-20 text-primary animate-float" fill="currentColor" />
+              <Heart className="w-20 h-20 text-primary animate-float bg-gradient-to-r from-[#f46b45] to-[#eea849] bg-clip-text" fill="currentColor" />
               <Sparkles className="w-8 h-8 text-accent absolute -top-2 -right-2 animate-pulse-soft" />
             </div>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
-            Discover Your
-            <span className="text-primary block">Perfect Match</span>
+            理想の相性を
+            <span className="text-primary block">見つけよう</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-            Unlock the secrets of compatibility with our comprehensive analysis using zodiac signs, MBTI, blood types,
-            and more. Find out if you're meant to be together.
+            星座、MBTI、血液型などを使った総合診断で、二人の本当の相性を見つけましょう。
+            運命の人かどうか、今すぐチェック！
           </p>
           <Link href="/generate">
             <Button
               size="lg"
               className="text-lg px-12 py-6 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground border-0 transition-all duration-300 hover:scale-105"
             >
-              Start Your Love Journey
+              恋の相性診断を始める
               <ArrowRight className="w-6 h-6 ml-2" />
             </Button>
           </Link>
@@ -43,12 +43,11 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-primary rounded-md flex items-center justify-center mx-auto mb-4">
                 <Star className="w-8 h-8 text-primary-foreground" />
               </div>
-              <CardTitle className="text-xl text-foreground">Multiple Systems</CardTitle>
+              <CardTitle className="text-xl text-foreground">多彩な診断システム</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base leading-relaxed">
-                Analyze compatibility through zodiac signs, MBTI, blood types, Chinese zodiac, and more fortune-telling
-                systems.
+                星座、MBTI、血液型、干支など、さまざまな占い・診断で相性を分析します。
               </CardDescription>
             </CardContent>
           </Card>
@@ -58,12 +57,11 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-secondary rounded-md flex items-center justify-center mx-auto mb-4">
                 <Zap className="w-8 h-8 text-secondary-foreground" />
               </div>
-              <CardTitle className="text-xl text-foreground">AI-Powered</CardTitle>
+              <CardTitle className="text-xl text-foreground">AIによる診断</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base leading-relaxed">
-                Our advanced AI analyzes your data and provides personalized insights about your relationship
-                compatibility.
+                AIがあなたの情報をもとに、二人の関係性をパーソナライズして診断します。
               </CardDescription>
             </CardContent>
           </Card>
@@ -73,11 +71,11 @@ export default function LandingPage() {
               <div className="w-16 h-16 bg-accent rounded-md flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-accent-foreground" />
               </div>
-              <CardTitle className="text-xl text-foreground">Share Results</CardTitle>
+              <CardTitle className="text-xl text-foreground">結果をシェア</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base leading-relaxed">
-                Get beautiful, shareable results perfect for Instagram stories and discussing with your partner.
+                インスタやパートナーとの会話にぴったりな、シェアしやすい美しい診断結果が手に入ります。
               </CardDescription>
             </CardContent>
           </Card>
@@ -86,9 +84,9 @@ export default function LandingPage() {
         {/* How It Works */}
         <Card className="border-0 bg-secondary/20 rounded-md p-12 mb-16">
           <CardHeader className="text-center pb-8">
-            <CardTitle className="text-3xl text-foreground mb-4">How It Works</CardTitle>
+            <CardTitle className="text-3xl text-foreground mb-4">使い方</CardTitle>
             <CardDescription className="text-lg max-w-2xl mx-auto">
-              Get your compatibility results in just three simple steps
+              3ステップで簡単に相性診断！
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -97,27 +95,27 @@ export default function LandingPage() {
                 <div className="w-16 h-16 bg-primary text-primary-foreground rounded-md flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   1
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Enter Your Info</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">情報を入力</h3>
                 <p className="text-muted-foreground">
-                  Fill in what you know about both people - zodiac signs, MBTI, blood types, and more.
+                  二人の星座、MBTI、血液型など分かる範囲で入力してください。
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-secondary text-secondary-foreground rounded-md flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   2
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">AI Analysis</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">AIによる分析</h3>
                 <p className="text-muted-foreground">
-                  Our AI analyzes your compatibility across multiple fortune-telling systems.
+                  AIが複数の診断システムを使って二人の相性を分析します。
                 </p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-accent text-accent-foreground rounded-md flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                   3
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Get Results</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">結果を受け取る</h3>
                 <p className="text-muted-foreground">
-                  Receive detailed compatibility insights and share them with your partner.
+                  詳細な診断結果を受け取り、パートナーとシェアしましょう。
                 </p>
               </div>
             </div>
@@ -128,9 +126,9 @@ export default function LandingPage() {
         <div className="text-center mb-16">
           <Card className="border-0 bg-primary/10 rounded-md p-12">
             <CardContent className="pt-0">
-              <h2 className="text-4xl font-bold text-foreground mb-4">Ready to Find Out?</h2>
+              <h2 className="text-4xl font-bold text-foreground mb-4">さっそく診断してみよう！</h2>
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Don't wait any longer. Discover if you and your special someone are truly compatible.
+                今すぐあなたと大切な人の本当の相性をチェックしましょう。
               </p>
               <Link href="/generate">
                 <Button
@@ -138,7 +136,7 @@ export default function LandingPage() {
                   className="text-lg px-12 py-6 rounded-md bg-primary hover:bg-primary/90 text-primary-foreground border-0 transition-all duration-300 hover:scale-105"
                 >
                   <Heart className="w-6 h-6 mr-2" fill="currentColor" />
-                  Test Your Compatibility Now
+                  今すぐ相性診断
                 </Button>
               </Link>
             </CardContent>
@@ -149,16 +147,16 @@ export default function LandingPage() {
         <footer className="text-center pt-8 border-t border-border">
           <div className="flex flex-wrap justify-center gap-6 mb-4">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              About
+              このサイトについて
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              Privacy
+              プライバシー
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
-              Instagram
+              インスタグラム
             </a>
           </div>
-          <p className="text-sm text-muted-foreground">Made with ❤️ for finding love and compatibility</p>
+          <p className="text-sm text-muted-foreground">恋と相性を見つけるために❤️で作りました</p>
         </footer>
       </div>
     </div>

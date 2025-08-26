@@ -5,39 +5,39 @@
 
 :root {
   /* Updated to new color scheme: Light Apricot, Baby Pink, Pastel Green, Soft Cream, Deep Gray */
-  --background: #fff9f5; /* Soft Cream background */
+  --background: #FAF9F6; /* Soft Cream background */
   --foreground: #333333; /* Deep Neutral Gray text */
-  --card: #fff9f5; /* Same as background for flat design */
+  --card: #FAF9F6; /* Same as background for flat design */
   --card-foreground: #333333;
-  --popover: #fff9f5;
+  --popover: #FAF9F6;
   --popover-foreground: #333333;
-  --primary: #ffb347; /* Light Apricot primary */
+  --primary: #FFB085; /* Light Apricot primary */
   --primary-foreground: #333333;
-  --secondary: #ffd1dc; /* Baby Pink secondary */
+  --secondary: #FFF3B0; /* Baby Pink secondary */
   --secondary-foreground: #333333;
-  --muted: #fff9f5;
+  --muted: #FAF9F6;
   --muted-foreground: #666666;
-  --accent: #77dd77; /* Pastel Green contrast accent */
+  --accent: #A8E6CF; /* Pastel Green contrast accent */
   --accent-foreground: #333333;
   --destructive: #ff6b6b;
   --destructive-foreground: #333333;
   --border: #e8e8e8; /* Light border for flat design */
   --input: #ffffff; /* White input background */
-  --ring: #ffb347; /* Light Apricot focus ring */
-  --chart-1: #ffb347;
-  --chart-2: #ffd1dc;
-  --chart-3: #77dd77;
+  --ring: #FFB085; /* Light Apricot focus ring */
+  --chart-1: #FFB085;
+  --chart-2: #FFF3B0;
+  --chart-3: #A8E6CF;
   --chart-4: #ffa07a;
   --chart-5: #98fb98;
   --radius: 0.375rem; /* Decreased border radius for flatter look */
-  --sidebar: #fff9f5;
+  --sidebar: #FAF9F6;
   --sidebar-foreground: #333333;
-  --sidebar-primary: #ffb347;
+  --sidebar-primary: #FFB085;
   --sidebar-primary-foreground: #333333;
-  --sidebar-accent: #ffd1dc;
+  --sidebar-accent: #FFF3B0;
   --sidebar-accent-foreground: #333333;
   --sidebar-border: #e8e8e8;
-  --sidebar-ring: #ffb347;
+  --sidebar-ring: #FFB085;
 }
 
 .dark {
@@ -47,32 +47,32 @@
   --card-foreground: #f5f5f5;
   --popover: #2a2a2a;
   --popover-foreground: #f5f5f5;
-  --primary: #ffb347;
+  --primary: #FFB085;
   --primary-foreground: #333333;
-  --secondary: #ffd1dc;
+  --secondary: #FFF3B0;
   --secondary-foreground: #333333;
   --muted: #3a3a3a;
   --muted-foreground: #aaaaaa;
-  --accent: #77dd77;
+  --accent: #A8E6CF;
   --accent-foreground: #333333;
   --destructive: #ff6b6b;
   --destructive-foreground: #f5f5f5;
   --border: #4a4a4a;
   --input: #3a3a3a;
-  --ring: #ffb347;
-  --chart-1: #ffb347;
-  --chart-2: #ffd1dc;
-  --chart-3: #77dd77;
+  --ring: #FFB085;
+  --chart-1: #FFB085;
+  --chart-2: #FFF3B0;
+  --chart-3: #A8E6CF;
   --chart-4: #ffa07a;
   --chart-5: #98fb98;
   --sidebar: #2a2a2a;
   --sidebar-foreground: #f5f5f5;
-  --sidebar-primary: #ffb347;
+  --sidebar-primary: #FFB085;
   --sidebar-primary-foreground: #333333;
-  --sidebar-accent: #ffd1dc;
+  --sidebar-accent: #FFF3B0;
   --sidebar-accent-foreground: #333333;
   --sidebar-border: #4a4a4a;
-  --sidebar-ring: #ffb347;
+  --sidebar-ring: #FFB085;
 }
 
 @theme inline {
