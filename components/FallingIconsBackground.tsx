@@ -1,13 +1,15 @@
 import React, { useMemo } from "react"
 import { Heart, Star, Sparkles, Users, Zap, Gem, Slack } from "lucide-react"
 
-const ICONS = [Heart, Star, Sparkles, Zap, Gem, Slack]
+const ICONS = [Heart]//, Star, Sparkles, Slack]
 
 function getRandomInt(min: number, max: number) {
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
 
-const ICON_COUNT = 18
+const ICON_COUNT = typeof window !== "undefined"
+  ? Math.max(6, Math.floor(window.innerWidth / 100))
+  : 12
 
 export default function FallingIconsBackground() {
   // Memoize icon configs so they don't change on rerender
@@ -20,7 +22,7 @@ export default function FallingIconsBackground() {
         Icon,
         left: `${getRandomInt(0, 95)}vw`,
         size: getRandomInt(24, 48),
-        color: `#de9400`,
+        color: `#f7af88`,
         delay: getRandomInt(0, 4000),
         duration: getRandomInt(6000, 12000),
         opacity: Math.random() * 0.5 + 0.3,
