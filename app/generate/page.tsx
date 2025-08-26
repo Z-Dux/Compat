@@ -27,6 +27,7 @@ interface PersonData {
   animalHoroscope: string
   aboutMe: string
   isMe?: boolean | string
+  above30: boolean;
 }
 
 const cardSteps = [
@@ -58,6 +59,7 @@ export default function GeneratePage() {
     animalHoroscope: "",
     aboutMe: "",
     isMe: false,
+    above30: false
   })
 
   const [person2, setPerson2] = useState<PersonData>({
@@ -73,6 +75,7 @@ export default function GeneratePage() {
     enneagram: "",
     animalHoroscope: "",
     aboutMe: "",
+    above30: false
   })
 
   const [errors, setErrors] = useState<string[]>([])
@@ -253,6 +256,21 @@ export default function GeneratePage() {
             onChange={(e) => onChange("nickname", e.target.value)}
             className="rounded-sm border-2 border-foreground h-10 bg-background focus:ring-2 focus:ring-primary/20"
           />
+        </div>
+        <div className="space-y-2">
+          <Label className="text-sm font-medium">Age</Label>
+            <Select
+            value={data.above30 ? "above30" : "under30"}
+            onValueChange={(value) => onChange("above30", value === "above30" ? "true" : "false")}
+            >
+            <SelectTrigger className="rounded-sm border-2 border-foreground h-10 bg-background">
+              <SelectValue placeholder="Select age group" />
+            </SelectTrigger>
+            <SelectContent className="rounded-sm border-2 border-foreground">
+              <SelectItem value="under30">Under 30s</SelectItem>
+              <SelectItem value="above30">Above 30s</SelectItem>
+            </SelectContent>
+            </Select>
         </div>
         <div className="flex items-center space-x-3 p-2 rounded-sm border border-muted">
           <Checkbox
