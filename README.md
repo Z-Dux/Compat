@@ -3,6 +3,8 @@
 
 Compat is a modern compatibility analysis web app that helps users discover relationship potential using multiple personality and fortune-telling systems. Enter details like zodiac signs, MBTI, blood type, and more to receive beautiful, shareable results.
 
+> This project has used v0.dev as a project structure creator!
+
 ## Features
 
 - Analyze compatibility using Zodiac, MBTI, Blood Type, Chinese Zodiac, Enneagram, and Japanese systems

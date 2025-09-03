@@ -302,10 +302,10 @@ export default function GeneratePage() {
       onChange: (field: keyof PersonData, value: string) => void
     }) => (
       <div className="space-y-2">
-        <Label className="text-sm font-medium">Zodiac Sign</Label>
+        <Label className="text-sm font-medium">星座</Label>
         <Select value={data.zodiacSign} onValueChange={(value) => onChange("zodiacSign", value)}>
           <SelectTrigger className="rounded-sm border-2 border-foreground h-10 bg-background">
-            <SelectValue placeholder="Select zodiac" />
+            <SelectValue placeholder="星座を選択" />
           </SelectTrigger>
           <SelectContent className="rounded-sm border-2 border-foreground">
             {zodiacSigns.map((sign) => (
@@ -330,15 +330,15 @@ export default function GeneratePage() {
     }) => (
       <div className="flex space-x-4">
         <div className="flex-1 space-y-2">
-          <Label className="text-sm font-medium">Blood Type</Label>
+          <Label className="text-sm font-medium">血液型</Label>
           <Select value={data.bloodType} onValueChange={(value) => onChange("bloodType", value)}>
             <SelectTrigger className="rounded-sm border-2 border-foreground h-10 bg-background">
-              <SelectValue placeholder="Select type" />
+              <SelectValue placeholder="血液型を選択" />
             </SelectTrigger>
             <SelectContent className="rounded-sm border-2 border-foreground">
               {bloodTypes.map((type) => (
                 <SelectItem key={type} value={type}>
-                  Type {type}
+                  {type}型
                 </SelectItem>
               ))}
             </SelectContent>
@@ -348,7 +348,7 @@ export default function GeneratePage() {
           <Label className="text-sm font-medium">MBTI</Label>
           <Select value={data.mbti} onValueChange={(value) => onChange("mbti", value)}>
             <SelectTrigger className="rounded-sm border-2 border-foreground h-10 bg-background">
-              <SelectValue placeholder="Select MBTI" />
+              <SelectValue placeholder="MBTIを選択" />
             </SelectTrigger>
             <SelectContent className="rounded-sm border-2 border-foreground">
               {mbtiTypes.map((type) => (
@@ -374,24 +374,24 @@ export default function GeneratePage() {
     }) => (
       <div className="space-y-3">
         <div className="space-y-2">
-          <Label className="text-sm font-medium">Enneagram</Label>
+          <Label className="text-sm font-medium">エニアグラム</Label>
           <Select value={data.enneagram} onValueChange={(value) => onChange("enneagram", value)}>
             <SelectTrigger className="rounded-sm border-2 border-foreground h-10 bg-background">
-              <SelectValue placeholder="Select type" />
+              <SelectValue placeholder="タイプを選択" />
             </SelectTrigger>
             <SelectContent className="rounded-sm border-2 border-foreground">
               {enneagramTypes.map((type) => (
                 <SelectItem key={type} value={type}>
-                  Type {type}
+                  タイプ {type}
                 </SelectItem>
               ))}
             </SelectContent>
           </Select>
         </div>
         <div className="space-y-2">
-          <Label className="text-sm font-medium">Four Pillars</Label>
+          <Label className="text-sm font-medium">四柱推命</Label>
           <Input
-            placeholder="Enter if known"
+            placeholder="分かれば入力"
             value={data.fourPillars}
             onChange={(e) => onChange("fourPillars", e.target.value)}
             className="rounded-sm border-2 border-foreground h-10 bg-background"
@@ -412,27 +412,27 @@ export default function GeneratePage() {
     }) => (
       <div className="space-y-3">
         <div className="space-y-2">
-          <Label className="text-sm font-medium">Kusei Kigaku</Label>
+          <Label className="text-sm font-medium">九星気学</Label>
           <Input
-            placeholder="Enter if known"
+            placeholder="分かれば入力"
             value={data.kuseiKigaku}
             onChange={(e) => onChange("kuseiKigaku", e.target.value)}
             className="rounded-sm border-2 border-foreground h-10 bg-background"
           />
         </div>
         <div className="space-y-2">
-          <Label className="text-sm font-medium">Rokusei</Label>
+          <Label className="text-sm font-medium">六星占術</Label>
           <Input
-            placeholder="Enter if known"
+            placeholder="分かれば入力"
             value={data.rokuseiAstrology}
             onChange={(e) => onChange("rokuseiAstrology", e.target.value)}
             className="rounded-sm border-2 border-foreground h-10 bg-background"
           />
         </div>
         <div className="space-y-2">
-          <Label className="text-sm font-medium">Sanmeigaku</Label>
+          <Label className="text-sm font-medium">算命学</Label>
           <Input
-            placeholder="Enter if known"
+            placeholder="分かれば入力"
             value={data.sanmeigaku}
             onChange={(e) => onChange("sanmeigaku", e.target.value)}
             className="rounded-sm border-2 border-foreground h-10 bg-background"
@@ -452,9 +452,9 @@ export default function GeneratePage() {
       onChange: (field: keyof PersonData, value: string) => void
     }) => (
       <div className="space-y-2">
-        <Label className="text-sm font-medium">Animal Horoscope</Label>
+        <Label className="text-sm font-medium">動物占い</Label>
         <Input
-          placeholder="Enter if known"
+          placeholder="分かれば入力"
           value={data.animalHoroscope}
           onChange={(e) => onChange("animalHoroscope", e.target.value)}
           className="rounded-sm border-2 border-foreground h-10 bg-background"
@@ -476,13 +476,13 @@ export default function GeneratePage() {
     }) => (
       <div className="space-y-2">
         <Label className="text-sm font-medium">
-          {personNumber === 1 ? "Describe yourself" : "Describe your ideal partner"}
+          {personNumber === 1 ? "自己紹介" : "理想の相手像"}
         </Label>
         <Textarea
           placeholder={
             personNumber === 1
-              ? "Tell us about yourself, your personality, interests..."
-              : "Describe what you're looking for in a partner..."
+              ? "あなた自身や性格、趣味などを教えてください..."
+              : "理想の相手について教えてください..."
           }
           value={data.aboutMe}
           onChange={(e) => onChange("aboutMe", e.target.value)}
@@ -546,7 +546,7 @@ export default function GeneratePage() {
               <h3
                 className={`text-lg font-bold transition-colors duration-300 ${isBlue ? "text-blue-600" : "text-pink-600"}`}
               >
-                {personNumber === 1 ? "Boy" : "Girl"}
+                {personNumber === 1 ? "男性" : "女性"}
               </h3>
             </div>
 
@@ -605,7 +605,7 @@ export default function GeneratePage() {
           <Link href="/">
             <Button variant="ghost" className="mb-4 text-muted-foreground hover:text-foreground rounded-sm">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Home
+              ホームに戻る
             </Button>
           </Link>
         </div>
@@ -613,7 +613,7 @@ export default function GeneratePage() {
         <div className="text-center mb-8">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{cardSteps[currentStep].title}</h1>
           <p className="text-muted-foreground">
-            Step {currentStep + 1} of {cardSteps.length}
+            ステップ {currentStep + 1} / {cardSteps.length}
           </p>
         </div>
 
@@ -667,12 +667,12 @@ export default function GeneratePage() {
               {isSubmitting ? (
                 <>
                   <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                  Analyzing...
+                  診断中...
                 </>
               ) : (
                 <>
                   <Heart className="w-5 h-5 mr-2" fill="currentColor" />
-                  Generate Results
+                  診断結果を表示
                 </>
               )}
             </Button>
